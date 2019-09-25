@@ -8,12 +8,12 @@ Some python programs for calculating fractal dimension of complex networks or gr
 ## Usage
 Test code example
 ```
-# http://www-personal.umich.edu/~mejn/netdata/dolphins.zip
+# dolphins.gml download from http://www-personal.umich.edu/~mejn/netdata/dolphins.zip
 import networkx as nx
 import GC from box_cover
 import matplotlib.pyplot as plt
-\# test code
-G = nx.read_gml("./dophins.gml")
+# test code
+G = nx.read_gml("./dolphins.gml")
 X, Y = GC(G)
 LogXI = [np.log10(x) for x in X]
 LogYI = [np.log10(y) for y in Y]
